@@ -1,0 +1,12 @@
+/* Altera a cor do fundo do texto do diálogo para branco */
+.df-messenger-message-text {
+  background-color: white;
+}
+/* Altera a cor do texto do diálogo para azul */
+.df-messenger-message-text {
+  color: blue;
+}
+/* Faz as caixas de diálogo ficarem redondas */
+.df-messenger-message {
+  border-radius: 20px;
+}

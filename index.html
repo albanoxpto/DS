@@ -9,15 +9,41 @@
   <style>
       /* Reduzir o tamanho da imagem */
       img {
-        width: 6%;
+        width: 8%;
         display: block;
         margin: 0 auto;
       }
+
+      /* Estilo para o texto aparecer quando o mouse passa por cima da imagem */
+
+      .text-overlay{
+
+visibility: hidden;
+
+position: absolute;
+
+top: 10%;
+
+left: 50%;
+
+transform: translateX(-50%);
+
+background-color: #000;
+
+color: #fff;
+
+padding: 5px 10px;
+
+font-size: 14px;
+
+border-radius: 5px;
+
+}
+
+
     </style>
   </head>
-    <a href="https://goo.gl/maps/BYNRDSdCQHyE5EyX9" target="_blank">
-      <img src="https://d1fdloi71mui9q.cloudfront.net/2gKpyPVAQy6jcuV8Ytw2_eTDa283wJRbE7s0t" alt="DS Seguros Funchal Centromar">
-    </a>
+
   
 <style>
 
@@ -93,6 +119,35 @@
 </head>
 
 <body>
+
+
+  <a href="https://goo.gl/maps/BYNRDSdCQHyE5EyX9" target="_blank">
+
+    <img src="https://d1fdloi71mui9q.cloudfront.net/2gKpyPVAQy6jcuV8Ytw2_eTDa283wJRbE7s0t" alt="DS Seguros Funchal Centromar">
+
+    <div class="text-overlay">Link da Loja/Sede - DS Seguros Funchal Centromar - Mapa</div>
+
+</a>
+
+<script>
+
+    var img = document.querySelector("img");
+
+    var text = document.querySelector(".text-overlay");
+
+    img.addEventListener("mouseover", function(){
+
+        text.style.visibility = "visible";
+
+    });
+
+    img.addEventListener("mouseout", function(){
+
+        text.style.visibility = "hidden";
+
+    });
+
+</script>  
 
    
         <h1 style="text-align: center;">DS Seguros Funchal Centromar</h1>
